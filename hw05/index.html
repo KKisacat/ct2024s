@@ -178,14 +178,16 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      該次作業程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/ct2024s/hw<span style="color:red;">05</span>/src/ 檔案夾。
+      該次作業相關資料，放在 https://github.com/
+      <span style="color:red;">KKisacat</span>
+      /ct2024s/hw05/src/</span>。
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業是透過機器學習將我們之前手寫出來的少量字體增加，生成完整的手寫字體檔。像是我名字裡的瑾就沒有寫到，但透過這次作業，就可以成功生成瑾字，可惜即使我已經把訓練的epoch調成1500後，訓練出來的字仍然差那麼一點的感覺，很多字都還是沒有生的很好。這次作業是用學校教室電腦放著訓練的，之後有機會的話再試試看繼續訓練會不會變得更好。
     </div>
   </div>
 
@@ -201,19 +203,24 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>2</td>
-          <td>Simple baseline - 描述、描述、描述</td>
+          <td>Simple baseline - 產生訓練樣本 (4808字/2) (放入image_train，壓縮檔上傳)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 描述、描述、描述 </td>
+          <td id='m2'>2</td>
+          <td>Simple baseline - 產生驗證樣本 (4808字/2) (放入image_val，壓縮檔上傳)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述、描述、描述 </td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>4</td>
+          <td>Medium baseline - 繳交字體的對比檔案 </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>2</td>
+          <td>Strong baseline - 最後生成結果 (於infer_1資料夾內)</td>
         </tr>
       </table>
     </div>
@@ -222,11 +229,39 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <h4><u>Simple Baseline</u></h4>
+      <table style="width:100%">
+        <tr>
+           <th><img src="image_train截圖.PNG" alt="成果圖片" width="100%" height="100%" /></th>
+           <th><img src="image_val截圖.PNG" alt="成果圖片" width="100%" height="100%" /></th>
+        </tr>
+      </table>
     </div>
   </div>
+
+    <!-- ------------------------------------------------>
+    <div class="row hw12">
+      <div class="col-md-12 twenty">
+        <h4><u>Medium Baseline</u></h4>
+        <table style="width:100%">
+          <a href="https://drive.google.com/file/d/1rTIHPwkfU4kNlM0HimFC_blaGL267UHn/view?usp=sharing" download="experiment_110820043.zip">Download  experiment_110820043_陳思瑾</a>
+        </table>
+      </div>
+    </div>
+
+      <!-- ------------------------------------------------>
+      <div class="row hw12">
+        <div class="col-md-12 twenty">
+          <h4><u>Medium Baseline</u></h4>
+          <table style="width:100%">
+            <a href="https://drive.google.com/file/d/1Xq8StKGSL9QB2DFVUqOJnkPm9w86B0Wc/view?usp=sharing" download="infer_110820043.zip">Download  infer_110820043_陳思瑾</a>
+            <br>
+            <tr>
+              <th><img src="堃截圖.PNG" alt="成果圖片" width="100%" height="100%" /></th>
+           </tr>       
+          </table>
+        </div>
+      </div>
 
   <!-- ------------------------------------------------>
 
